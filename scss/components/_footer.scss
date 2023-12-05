@@ -1,0 +1,28 @@
+.pie-pag {
+    background-color: $bg-footer;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-pie-pag {
+    width: 60%;
+    background-color: $bg-body;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border-top: 5px solid $bg-footer;
+}
+
+.links-pie-pag {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        height: 70px;
+        border-radius: 60px;
+    }
+}
