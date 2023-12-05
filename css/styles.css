@@ -48,6 +48,7 @@
   flex-direction: column;
   border-radius: 20px;
   border-top: 5px solid #81e5fc;
+  border-bottom: 5px solid #81e5fc;
 }
 
 .links-pie-pag {
@@ -59,6 +60,78 @@
 .links-pie-pag img {
   height: 70px;
   border-radius: 60px;
+}
+
+/* Inicio Main */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo-main {
+  background-image: url(../../images/index/fondo-main.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 41rem;
+  width: 97%;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.fondo-main h1 {
+  background-color: #cff4fc;
+  padding: 5px;
+  border-radius: 10px;
+  display: inline;
+}
+
+.cont-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.div-parrafos-index {
+  width: 42%;
+}
+.div-parrafos-index p {
+  text-align: justify;
+}
+
+/* Fin Main */
+/* Inicio Section */
+.section-index {
+  background-color: #a5e8f7;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.section-index h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cont-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjetas-section img {
+  height: 300px;
+  width: 340px;
+  border-radius: 10px;
+}
+.tarjetas-section img:hover {
+  border: 5px solid #f3ce9d;
+}
+.tarjetas-section p {
+  width: 340px;
+  text-align: justify;
+  padding: 11px;
 }
 
 /* Fin Imports */
