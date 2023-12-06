@@ -1,0 +1,181 @@
+@import "../base/variables";
+
+/* Inicio Main */
+.main-filmografia {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-filmografia {
+    padding: 25px 0;
+    width: 95%;
+
+    h3 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    div:hover>h3 {
+        display: block;
+        text-align: center;
+    }
+
+    div:hover>p {
+        display: block;
+        text-align: $txt-alineacion;
+        padding: 8px;
+    }
+}
+
+.portada-filmografia {
+    background-image: url(../../images/filmografia/fondo-filmografia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+
+    h1 {
+        align-self: center;
+        font-size: 50px;
+        margin-left: 130px;
+    }
+}
+
+/* Primera Fila */
+.primera-fila {
+    height: 330px;
+    display: flex;
+
+    div {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 288.75px;
+        border: 2px solid $bg-body;
+    }
+
+    div:hover {
+        background-image: none;
+        background-color: $bg-header;
+    }
+}
+
+.filmo-1 {
+    background-image: url(../../images/filmografia/taxidriver-filmografia.jpg);
+}
+
+.filmo-2 {
+    background-image: url(../../images/filmografia/theirishman-filmografia.jpg);
+}
+
+.filmo-3 {
+    background-image: url(../../images/filmografia/casino-filmografia.jpg);
+}
+
+.filmo-4 {
+    background-image: url(../../images/filmografia/ragingbull-filmografia.jpg);
+}
+
+/* Segunda Fila */
+.segunda-fila {
+    height: 250px;
+    display: flex;
+
+    div {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 192.5px;
+        border: 2px solid $bg-body;
+    }
+
+    div:hover {
+        background-image: none;
+        background-color: $bg-header;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.filmo-5 {
+    background-image: url(../../images/filmografia/heat-filmografia.jpg);
+}
+
+.filmo-6 {
+    background-image: url(../../images/filmografia/thekingofcomedy-filmografia.jpg);
+}
+
+.filmo-7 {
+    background-image: url(../../images/filmografia/thegodfather-filmografia.jpg);
+}
+
+.filmo-8 {
+    background-image: url(../../images/filmografia/dirtygrandpa-filmografia.jpg);
+}
+
+.filmo-9 {
+    background-image: url(../../images/filmografia/thedeerhunter-filmografia.jpg);
+}
+
+.filmo-10 {
+    background-image: url(../../images/filmografia/capefear-filmografia.jpg);
+}
+
+/* Tercera Fila */
+.tercera-fila {
+    height: 310px;
+    display: flex;
+
+    div {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 231px;
+        border: 2px solid $bg-body;
+    }
+
+    div:hover {
+        background-image: none;
+        background-color: $bg-header;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.filmo-11 {
+    background-image: url(../../images/filmografia/abronxtale-filmografi.jpg);
+}
+
+.filmo-12 {
+    background-image: url(../../images/filmografia/killersoftheflowermoon-filmografia.webp);
+}
+
+.filmo-13 {
+    background-image: url(../../images/filmografia/onceinamerica-filmografia.jpg);
+}
+
+.filmo-14 {
+    background-image: url(../../images/filmografia/meettheparents-filmografia.png);
+}
+
+.filmo-15 {
+    background-image: url(../../images/filmografia/lastvegas-filmografia.jpg);
+}
+/* Fin Main */

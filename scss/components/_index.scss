@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 /* Inicio Main */
 .main-index {
     display: flex;
@@ -79,6 +81,8 @@
         width: 340px;
         text-align: $txt-alineacion;
         padding: 11px;
+        background-color: $bg-body;
+        border-radius: 10px;
     }
 }
-
+/* Fin Section */
