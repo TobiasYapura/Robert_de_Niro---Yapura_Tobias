@@ -1,0 +1,61 @@
+@import "../base/variables";
+
+/* Inicio Main */
+.main-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        padding: 15px;
+    }
+}
+
+.cont-parrafos-historia {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+
+    img {
+        width: 610px;
+        height: 500px;
+        border-radius: 20px;
+    }
+
+    &:nth-child(3) {
+        background-color: $bg-header;
+    }
+}
+
+.parrafos-historia {
+    padding: 30px;
+
+    h5 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    p {
+        text-align: $txt-alineacion;
+    }
+}
+/* Fin Main */
+
+/* Responsive Design Mobile y Tablet */
+@media only screen and (max-width: 991px) {
+    .cont-parrafos-historia {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 400px;
+            height: 320px;
+            border-radius: 100px;
+        }
+
+        &:nth-child(3) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
