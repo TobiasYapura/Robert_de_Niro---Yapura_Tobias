@@ -179,3 +179,29 @@
     background-image: url(../../images/filmografia/lastvegas-filmografia.jpg);
 }
 /* Fin Main */
+
+/* Responsive Design Mobile y Tablet */
+@media only screen and (max-width: 767px) {
+    .portada-filmografia {
+        background-image: url(../../images/filmografia/fondo-filmografia-mobile.jpg);
+        justify-content: flex-end;
+        height: 300px;
+
+        h1 {
+            margin: 0 170px 90px 0;
+            font-size: 30px;
+        }
+    }
+
+    .primera-fila, .segunda-fila, .tercera-fila {
+        display: flex;
+        flex-direction: column;
+        height: 250vh;
+
+        div {
+            height: 250vh;
+            width: 100%;
+            margin: 8px 0;
+        }
+    }
+}
