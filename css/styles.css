@@ -1,18 +1,800 @@
-/* Error: expected "{".
- *    ,
- * 68 | @media only screen and (max-width: 767px)
- *    |                                          ^
- *    '
- *   scss\components\_galeria.scss 68:42  @import
- *   scss\styles.scss 10:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 68 \2502  @media only screen and (max-width: 767px)\a    \2502                                           ^\a    \2575 \a   scss\\components\\_galeria.scss 68:42  @import\a   scss\\styles.scss 10:9                root stylesheet';
+/* Imports */
+/* Colores */
+/* Fin Colores */
+/* Bordes */
+/*Fin Bordes */
+/* Parrafos */
+/* Fin Parrafos */
+/* Colores */
+/* Fin Colores */
+/* Bordes */
+/*Fin Bordes */
+/* Parrafos */
+/* Fin Parrafos */
+.encabezado {
+  background-color: #a5e8f7;
 }
+
+.img-encabezado {
+  height: 100px;
+  border: 3px solid #87ceeb;
+  border-radius: 100px;
+  background-color: #faebd7;
+  box-shadow: 0 0 5px #000;
+}
+.img-encabezado:hover {
+  background-color: #f3ce9d;
+}
+
+.lista-header li {
+  border: 3px solid #87ceeb;
+  border-radius: 10px 0;
+  box-shadow: 0 0 3px #000;
+  background-color: #faebd7;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.lista-header li:hover {
+  background-color: #f3ce9d;
+}
+
+/* Colores */
+/* Fin Colores */
+/* Bordes */
+/*Fin Bordes */
+/* Parrafos */
+/* Fin Parrafos */
+.pie-pag {
+  background-color: #81e5fc;
+  display: flex;
+  justify-content: center;
+}
+
+.cont-pie-pag {
+  width: 60%;
+  background-color: #cff4fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border-top: 5px solid #81e5fc;
+  border-bottom: 5px solid #81e5fc;
+}
+
+.links-pie-pag {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.links-pie-pag div {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.links-pie-pag img {
+  height: 70px;
+  border-radius: 60px;
+}
+
+/* Responsive Design Mobile y Tablet*/
+@media only screen and (max-width: 768px) {
+  .links-pie-pag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links-pie-pag div {
+    width: 50%;
+    justify-content: center;
+  }
+  .links-pie-pag img {
+    margin: 5px;
+  }
+}
+/* Inicio Main */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo-main {
+  background-image: url(../../images/index/fondo-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 41rem;
+  width: 97%;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.fondo-main h1 {
+  background-color: #cff4fc;
+  padding: 5px;
+  border-radius: 10px;
+  display: inline;
+}
+
+.cont-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+
+.div-parrafos-index {
+  width: 42%;
+}
+.div-parrafos-index p {
+  text-align: justify;
+}
+
+/* Fin Main */
+/* Inicio Section */
+.section-index {
+  background-color: #a5e8f7;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.section-index h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cont-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjetas-section img {
+  height: 300px;
+  width: 340px;
+  border-radius: 10px;
+}
+.tarjetas-section img:hover {
+  border: 5px solid #f3ce9d;
+}
+.tarjetas-section p {
+  width: 340px;
+  text-align: justify;
+  padding: 11px;
+  background-color: #cff4fc;
+  border-radius: 10px;
+}
+
+/* Fin Section */
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+  .fondo-main {
+    width: 90%;
+    height: 25rem;
+  }
+  .cont-main {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .cont-main iframe {
+    width: 290px;
+  }
+  .div-parrafos-index {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+  .cont-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjetas-section {
+    margin-bottom: 40px;
+  }
+  .tarjetas-section img {
+    width: 290px;
+    height: 250px;
+  }
+  .tarjetas-section p {
+    width: 290px;
+  }
+}
+/* Responsive Design Tablet */
+@media only screen and (max-width: 992px) {
+  .cont-main iframe {
+    width: 315px;
+  }
+  .tarjetas-section img {
+    width: 315px;
+    height: 275px;
+  }
+  .tarjetas-section p {
+    width: 315px;
+    height: 210px;
+  }
+}
+/* Colores */
+/* Fin Colores */
+/* Bordes */
+/*Fin Bordes */
+/* Parrafos */
+/* Fin Parrafos */
+/* Inicio Main */
+.main-filmografia {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-filmografia {
+  padding: 25px 0;
+  width: 95%;
+}
+.cont-filmografia h3 {
+  display: none;
+}
+.cont-filmografia p {
+  display: none;
+}
+.cont-filmografia div:hover > h3 {
+  display: block;
+  text-align: center;
+}
+.cont-filmografia div:hover > p {
+  display: block;
+  text-align: justify;
+  padding: 8px;
+}
+
+.portada-filmografia {
+  background-image: url(../../images/filmografia/fondo-filmografia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+}
+.portada-filmografia h1 {
+  align-self: center;
+  font-size: 50px;
+  margin-left: 130px;
+}
+
+/* Primera Fila */
+.primera-fila {
+  height: 330px;
+  display: flex;
+}
+.primera-fila div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 288.75px;
+  border: 2px solid #cff4fc;
+}
+.primera-fila div:hover {
+  background-image: none;
+  background-color: #a5e8f7;
+}
+
+.filmo-1 {
+  background-image: url(../../images/filmografia/taxi-driver-filmografia.jpg);
+}
+
+.filmo-2 {
+  background-image: url(../../images/filmografia/the-irishman-filmografia.jpg);
+}
+
+.filmo-3 {
+  background-image: url(../../images/filmografia/casino-filmografia.jpg);
+}
+
+.filmo-4 {
+  background-image: url(../../images/filmografia/raging-bull-filmografia.jpg);
+}
+
+/* Segunda Fila */
+.segunda-fila {
+  height: 250px;
+  display: flex;
+}
+.segunda-fila div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 192.5px;
+  border: 2px solid #cff4fc;
+}
+.segunda-fila div:hover {
+  background-image: none;
+  background-color: #a5e8f7;
+}
+.segunda-fila p {
+  font-size: 14px;
+}
+
+.filmo-5 {
+  background-image: url(../../images/filmografia/heat-filmografia.jpg);
+}
+
+.filmo-6 {
+  background-image: url(../../images/filmografia/the-king-of-comedy-filmografia.jpg);
+}
+
+.filmo-7 {
+  background-image: url(../../images/filmografia/the-godfather-filmografia.jpg);
+}
+
+.filmo-8 {
+  background-image: url(../../images/filmografia/dirty-grandpa-filmografia.jpg);
+}
+
+.filmo-9 {
+  background-image: url(../../images/filmografia/the-deer-hunter-filmografia.jpg);
+}
+
+.filmo-10 {
+  background-image: url(../../images/filmografia/cape-fear-filmografia.jpg);
+}
+
+/* Tercera Fila */
+.tercera-fila {
+  height: 310px;
+  display: flex;
+}
+.tercera-fila div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 231px;
+  border: 2px solid #cff4fc;
+}
+.tercera-fila div:hover {
+  background-image: none;
+  background-color: #a5e8f7;
+}
+.tercera-fila p {
+  font-size: 15px;
+}
+
+.filmo-11 {
+  background-image: url(../../images/filmografia/a-bronx-tale-filmografi.jpg);
+}
+
+.filmo-12 {
+  background-image: url(../../images/filmografia/killers-of-the-flower-moon-filmografia.jpg);
+}
+
+.filmo-13 {
+  background-image: url(../../images/filmografia/once-in-america-filmografia.jpg);
+}
+
+.filmo-14 {
+  background-image: url(../../images/filmografia/meet-the-parents-filmografia.jpg);
+}
+
+.filmo-15 {
+  background-image: url(../../images/filmografia/last-vegas-filmografia.jpg);
+}
+
+/* Fin Main */
+/* Responsive Design Mobile y Tablet */
+@media only screen and (max-width: 767px) {
+  .portada-filmografia {
+    background-image: url(../../images/filmografia/fondo-filmografia-mobile.jpg);
+    justify-content: flex-end;
+    height: 300px;
+  }
+  .portada-filmografia h1 {
+    margin: 0 170px 90px 0;
+    font-size: 30px;
+  }
+  .primera-fila, .segunda-fila, .tercera-fila {
+    display: flex;
+    flex-direction: column;
+    height: 250vh;
+  }
+  .primera-fila div, .segunda-fila div, .tercera-fila div {
+    height: 250vh;
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+/* Colores */
+/* Fin Colores */
+/* Bordes */
+/*Fin Bordes */
+/* Parrafos */
+/* Fin Parrafos */
+/* Inicio Main */
+.main-historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-historia h1 {
+  padding: 15px;
+}
+
+.cont-parrafos-historia {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+.cont-parrafos-historia img {
+  width: 610px;
+  height: 500px;
+  border-radius: 20px;
+}
+.cont-parrafos-historia:nth-child(3) {
+  background-color: #a5e8f7;
+}
+
+.parrafos-historia {
+  padding: 30px;
+}
+.parrafos-historia h5 {
+  text-align: center;
+  font-size: 35px;
+}
+.parrafos-historia p {
+  text-align: justify;
+}
+
+/* Fin Main */
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+  .cont-parrafos-historia {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-parrafos-historia img {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+  }
+  .cont-parrafos-historia:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+}
+/* Responsive Design Mobile y Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cont-parrafos-historia {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-parrafos-historia img {
+    width: 370px;
+    height: 370px;
+    border-radius: 400px;
+  }
+  .cont-parrafos-historia:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* Inicio Section Premios */
+.section-premios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0 80px 0;
+}
+.section-premios img {
+  height: 450px;
+  width: 470px;
+  border: 3px solid #87ceeb;
+  border-radius: 150px;
+  box-shadow: 0 0 5px #000;
+}
+
+.cont-titulo-premios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+.cont-titulo-premios p {
+  text-align: justify;
+}
+
+/* Fin Section */
+/* Inicio Main Section */
+.premios {
+  background-color: #a5e8f7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 35px;
+}
+.premios iframe {
+  border-radius: 30px;
+  width: 510px;
+  height: 365px;
+}
+.premios:nth-child(2) {
+  background-color: #cff4fc;
+}
+
+.texto-premios {
+  text-align: center;
+  width: 390px;
+}
+.texto-premios p {
+  display: none;
+}
+.texto-premios h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.texto-premios img {
+  height: 350px;
+  width: 350px;
+  border-radius: 350px;
+}
+.texto-premios:hover > img {
+  display: none;
+}
+.texto-premios:hover > p {
+  display: block;
+  font-size: 15px;
+}
+
+/* Fin Main */
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+  .section-premios {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-premios img {
+    width: 290px;
+    height: 310px;
+    border-radius: 10px;
+  }
+  .cont-titulo-premios {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .premios:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .premios iframe {
+    display: none;
+  }
+  .texto-premios {
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+  .texto-premios img {
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+  }
+  .texto-premios p {
+    display: inline;
+    width: 85%;
+    text-align: justify;
+  }
+  .texto-premios:hover > img {
+    display: inline;
+  }
+}
+/* Responsive Design Tablet */
+@media only screen and (max-width: 991px) {
+  .section-premios img {
+    width: 350px;
+    height: 320px;
+    border-radius: 80px;
+  }
+  .premios {
+    flex-direction: column;
+  }
+  .premios:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .premios iframe {
+    display: none;
+  }
+  .texto-premios p {
+    display: block;
+  }
+}
+/* Inicio Main Galeria */
+.main-galeria {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-galeria {
+  background-color: #a5e8f7;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.cont-galeria h1 {
+  text-align: center;
+  font-size: 50px;
+  display: inline;
+  color: #15676d;
+  border: 3px solid #15676d;
+  background-color: #faebd7;
+  box-shadow: 0 3px 5px #000;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.cont-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 275px);
+  grid-template-rows: repeat(6, 275px);
+  grid-gap: 2px;
+  margin: 20px;
+}
+.cont-imagenes img:hover {
+  border: 6px solid #f3ce9d;
+}
+.cont-imagenes img:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.cont-imagenes img:nth-child(6) {
+  grid-column: 2/span 2;
+  grid-row: 3/span 2;
+}
+.cont-imagenes img:nth-child(7) {
+  grid-column: 1/span 2;
+  grid-row: 5/span 2;
+}
+
+.foto-chico {
+  height: 275px;
+  width: 275px;
+}
+
+.foto-grande {
+  height: 550px;
+  width: 550px;
+}
+
+/* Fin Main */
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+  .cont-galeria {
+    width: 93%;
+  }
+  .cont-galeria h1 {
+    font-size: 35px;
+  }
+  .cont-imagenes {
+    display: grid;
+    grid-template-columns: 275px;
+    grid-template-rows: repeat(9, 275px);
+    grid-gap: 20px;
+  }
+  .cont-imagenes img:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .cont-imagenes img:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .cont-imagenes img:nth-child(7) {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .foto-grande {
+    height: 275px;
+    width: 275px;
+  }
+}
+/* Responsive Design Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .foto-grande {
+    height: 275px;
+    width: 275px;
+  }
+  .cont-imagenes {
+    display: grid;
+    grid-template-columns: 275px 275px;
+    grid-template-rows: repeat(5, 275px);
+    grid-gap: 10px;
+  }
+  .cont-imagenes img:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .cont-imagenes img:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .cont-imagenes img:nth-child(7) {
+    width: 550px;
+    height: 450px;
+  }
+}
+/* Inicio Main Contacto */
+.main-contacto {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.div-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+.div-contacto img {
+  height: 400px;
+  border: 3px solid #87ceeb;
+  border-radius: 300px;
+  background-color: #faebd7;
+  box-shadow: 0 0 5px #000;
+  margin: 50px 0;
+}
+
+.form-contacto {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs {
+  margin-bottom: 25px;
+  width: 60%;
+  border-radius: 10px 0;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  border-top: 5px solid #81e5fc;
+}
+
+.boton {
+  background-color: #fff;
+  border-radius: 10px 0;
+  width: 100px;
+  padding: 5px;
+}
+
+/* Fin Main */
+/* Fin Imports */
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cff4fc;
+  color: #272727;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
