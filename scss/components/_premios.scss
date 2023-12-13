@@ -98,6 +98,7 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 0;
+
         &:nth-child(2) {
             flex-direction: column-reverse;
         }
@@ -108,8 +109,10 @@
     }
 
     .texto-premios {
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px 0;
+        align-items: center;
 
         img {
             width: 300px;
@@ -118,8 +121,7 @@
         }
 
         p {
-            display: inline;
-            width: 85%;
+            display: block;
             text-align: $txt-alineacion;
         }
 

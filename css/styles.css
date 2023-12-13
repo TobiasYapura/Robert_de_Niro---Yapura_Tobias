@@ -412,6 +412,9 @@
     width: 100%;
     margin: 8px 0;
   }
+  .primera-fila p, .segunda-fila p, .tercera-fila p {
+    display: block;
+  }
 }
 /* Colores */
 /* Fin Colores */
@@ -582,8 +585,10 @@
     display: none;
   }
   .texto-premios {
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px 0;
+    align-items: center;
   }
   .texto-premios img {
     width: 300px;
@@ -591,8 +596,7 @@
     margin-top: 25px;
   }
   .texto-premios p {
-    display: inline;
-    width: 85%;
+    display: block;
     text-align: justify;
   }
   .texto-premios:hover > img {
@@ -780,6 +784,7 @@
   border-radius: 10px 0;
   width: 100px;
   padding: 5px;
+  color: #272727;
 }
 
 /* Fin Main */
