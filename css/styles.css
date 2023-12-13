@@ -102,7 +102,7 @@
 }
 
 .fondo-main {
-  background-image: url(../../images/index/fondo-main.jpg);
+  background-image: url(../images/index/fondo-main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -251,7 +251,7 @@
 }
 
 .portada-filmografia {
-  background-image: url(../../images/filmografia/fondo-filmografia.jpg);
+  background-image: url(../images/filmografia/fondo-filmografia.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -285,19 +285,19 @@
 }
 
 .filmo-1 {
-  background-image: url(../../images/filmografia/taxi-driver-filmografia.jpg);
+  background-image: url(../images/filmografia/taxi-driver-filmografia.jpg);
 }
 
 .filmo-2 {
-  background-image: url(../../images/filmografia/the-irishman-filmografia.jpg);
+  background-image: url(../images/filmografia/the-irishman-filmografia.jpg);
 }
 
 .filmo-3 {
-  background-image: url(../../images/filmografia/casino-filmografia.jpg);
+  background-image: url(../images/filmografia/casino-filmografia.jpg);
 }
 
 .filmo-4 {
-  background-image: url(../../images/filmografia/raging-bull-filmografia.jpg);
+  background-image: url(../images/filmografia/raging-bull-filmografia.jpg);
 }
 
 /* Segunda Fila */
@@ -324,27 +324,27 @@
 }
 
 .filmo-5 {
-  background-image: url(../../images/filmografia/heat-filmografia.jpg);
+  background-image: url(../images/filmografia/heat-filmografia.jpg);
 }
 
 .filmo-6 {
-  background-image: url(../../images/filmografia/the-king-of-comedy-filmografia.jpg);
+  background-image: url(../images/filmografia/the-king-of-comedy-filmografia.jpg);
 }
 
 .filmo-7 {
-  background-image: url(../../images/filmografia/the-godfather-filmografia.jpg);
+  background-image: url(../images/filmografia/the-godfather-filmografia.jpg);
 }
 
 .filmo-8 {
-  background-image: url(../../images/filmografia/dirty-grandpa-filmografia.jpg);
+  background-image: url(../images/filmografia/dirty-grandpa-filmografia.jpg);
 }
 
 .filmo-9 {
-  background-image: url(../../images/filmografia/the-deer-hunter-filmografia.jpg);
+  background-image: url(../images/filmografia/the-deer-hunter-filmografia.jpg);
 }
 
 .filmo-10 {
-  background-image: url(../../images/filmografia/cape-fear-filmografia.jpg);
+  background-image: url(../images/filmografia/cape-fear-filmografia.jpg);
 }
 
 /* Tercera Fila */
@@ -371,30 +371,30 @@
 }
 
 .filmo-11 {
-  background-image: url(../../images/filmografia/a-bronx-tale-filmografi.jpg);
+  background-image: url(../images/filmografia/a-bronx-tale-filmografi.jpg);
 }
 
 .filmo-12 {
-  background-image: url(../../images/filmografia/killers-of-the-flower-moon-filmografia.jpg);
+  background-image: url(../images/filmografia/killers-of-the-flower-moon-filmografia.jpg);
 }
 
 .filmo-13 {
-  background-image: url(../../images/filmografia/once-in-america-filmografia.jpg);
+  background-image: url(../images/filmografia/once-in-america-filmografia.jpg);
 }
 
 .filmo-14 {
-  background-image: url(../../images/filmografia/meet-the-parents-filmografia.jpg);
+  background-image: url(../images/filmografia/meet-the-parents-filmografia.jpg);
 }
 
 .filmo-15 {
-  background-image: url(../../images/filmografia/last-vegas-filmografia.jpg);
+  background-image: url(../images/filmografia/last-vegas-filmografia.jpg);
 }
 
 /* Fin Main */
 /* Responsive Design Mobile y Tablet */
 @media only screen and (max-width: 767px) {
   .portada-filmografia {
-    background-image: url(../../images/filmografia/fondo-filmografia-mobile.jpg);
+    background-image: url(../images/filmografia/fondo-filmografia-mobile.jpg);
     justify-content: flex-end;
     height: 300px;
   }
@@ -783,6 +783,26 @@
 }
 
 /* Fin Main */
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+  .main-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-contacto img {
+    width: 290px;
+    height: 290px;
+    margin: 20px 0;
+  }
+  .form-contacto {
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .inputs {
+    width: 75%;
+  }
+}
 /* Fin Imports */
 /* Estilos Globales */
 * {

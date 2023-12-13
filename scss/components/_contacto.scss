@@ -45,3 +45,29 @@
     padding: 5px;
 }
 /* Fin Main */
+
+/* Responsive Design Mobile */
+@media only screen and (max-width: 767px) {
+    .main-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-contacto {
+        img {
+            width: 290px;
+            height: 290px;
+            margin: 20px 0;
+        }
+    }
+
+    .form-contacto {
+        width: 100%;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .inputs {
+        width: 75%;
+    }
+}
