@@ -54,13 +54,11 @@
 }
 
 .foto-chico {
-    height: 275px;
-    width: 275px;
+    @include tamanios(275px, 275px);
 }
 
 .foto-grande {
-    height: 550px;
-    width: 550px;
+    @include tamanios(550px, 550px);
 }
 /* Fin Main */
 
@@ -97,16 +95,14 @@
     }
 
     .foto-grande {
-        height: 275px;
-        width: 275px;
+        @include tamanios(275px, 275px);
     }
 }
 
 /* Responsive Design Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .foto-grande {
-        height: 275px;
-        width: 275px;
+        @include tamanios(275px, 275px);
     }
 
     .cont-imagenes {
@@ -126,8 +122,7 @@
         }
 
         img:nth-child(7) {
-            width: 550px;
-            height: 450px;
+            @include tamanios(450px, 550px);
         }
     }
 }

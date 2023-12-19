@@ -14,3 +14,11 @@ $bordes-header: 3px solid #87ceeb;
 /* Parrafos */
 $txt-alineacion: justify;
 /* Fin Parrafos */
+
+
+/* Mixin */
+
+@mixin tamanios($height, $width) {
+    height: $height;
+    width: $width;
+}

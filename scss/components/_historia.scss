@@ -17,8 +17,7 @@
     padding: 25px;
 
     img {
-        width: 610px;
-        height: 500px;
+        @include tamanios(500px, 610px);
         border-radius: 20px;
     }
 
@@ -48,8 +47,7 @@
         flex-direction: column;
 
         img {
-            width: 300px;
-            height: 300px;
+            @include tamanios(300px, 300px);
             border-radius: 300px;
         }
 
@@ -66,8 +64,7 @@
         flex-direction: column;
 
         img {
-            width: 370px;
-            height: 370px;
+            @include tamanios(370px, 370px);
             border-radius: 400px;
         }
 

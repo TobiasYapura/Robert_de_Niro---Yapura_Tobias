@@ -10,8 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 41rem;
-    width: 97%;
+    @include tamanios(41rem, 97%);
     margin-top: 20px;
     border-radius: 10px;
     display: flex;
@@ -63,8 +62,7 @@
 
 .tarjetas-section {
     img {
-        height: 300px;
-        width: 340px;
+        @include tamanios(300px, 340px);
         border-radius: 10px;
 
         &:hover {
@@ -85,8 +83,7 @@
 /* Responsive Design Mobile */
 @media only screen and (max-width: 767px) {
     .fondo-main {
-        width: 90%;
-        height: 25rem;
+        @include tamanios(25rem, 90%);
     }
 
     .cont-main {
@@ -114,8 +111,7 @@
         margin-bottom: 40px;
 
         img {
-            width: 290px;
-            height: 250px;
+            @include tamanios(250px, 290px);
         }
 
         p {
@@ -134,13 +130,11 @@
 
     .tarjetas-section {
         img {
-            width: 315px;
-            height: 275px;
+            @include tamanios(275px, 315px);
         }
 
         p {
-            width: 315px;
-            height: 210px;
+            @include tamanios(210px, 315px);
         }
     }
 }

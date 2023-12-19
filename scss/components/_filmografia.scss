@@ -199,8 +199,7 @@
         height: 250vh;
 
         div {
-            height: 250vh;
-            width: 100%;
+            @include tamanios(250vh, 100%);
             margin: 8px 0;
         }
 

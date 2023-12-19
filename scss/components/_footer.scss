@@ -31,8 +31,33 @@
     }
 
     img {
-        height: 70px;
+        height: 60px;
         border-radius: 60px;
+    }
+
+    img:hover {
+        animation: bordes-animados;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bordes-animados {
+        0% {
+            box-shadow: 0 0 0 0 #87ceeb;
+        }
+        25% {
+            box-shadow: 0 0 0 3px #87ceeb;
+        }
+        50% {
+            box-shadow: 0 0 0 7px #87ceeb;
+        }
+        75% {
+            box-shadow: 0 0 0 3px #87ceeb;
+        }
+        100% {
+            box-shadow: 0 0 0 0 #87ceeb;
+        }
     }
 }
 

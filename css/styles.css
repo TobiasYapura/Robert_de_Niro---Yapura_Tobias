@@ -5,12 +5,14 @@
 /*Fin Bordes */
 /* Parrafos */
 /* Fin Parrafos */
+/* Mixin */
 /* Colores */
 /* Fin Colores */
 /* Bordes */
 /*Fin Bordes */
 /* Parrafos */
 /* Fin Parrafos */
+/* Mixin */
 .encabezado {
   background-color: #a5e8f7;
 }
@@ -24,6 +26,7 @@
 }
 .img-encabezado:hover {
   background-color: #f3ce9d;
+  transform: scale(1.1);
 }
 
 .lista-header li {
@@ -37,6 +40,7 @@
 }
 .lista-header li:hover {
   background-color: #f3ce9d;
+  transform: scale(1.1);
 }
 
 /* Colores */
@@ -45,6 +49,7 @@
 /*Fin Bordes */
 /* Parrafos */
 /* Fin Parrafos */
+/* Mixin */
 .pie-pag {
   background-color: #81e5fc;
   display: flex;
@@ -75,8 +80,31 @@
   justify-content: space-around;
 }
 .links-pie-pag img {
-  height: 70px;
+  height: 60px;
   border-radius: 60px;
+}
+.links-pie-pag img:hover {
+  animation: bordes-animados;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes bordes-animados {
+  0% {
+    box-shadow: 0 0 0 0 #87ceeb;
+  }
+  25% {
+    box-shadow: 0 0 0 3px #87ceeb;
+  }
+  50% {
+    box-shadow: 0 0 0 7px #87ceeb;
+  }
+  75% {
+    box-shadow: 0 0 0 3px #87ceeb;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #87ceeb;
+  }
 }
 
 /* Responsive Design Mobile y Tablet*/
@@ -173,8 +201,8 @@
 /* Responsive Design Mobile */
 @media only screen and (max-width: 767px) {
   .fondo-main {
-    width: 90%;
     height: 25rem;
+    width: 90%;
   }
   .cont-main {
     display: flex;
@@ -197,8 +225,8 @@
     margin-bottom: 40px;
   }
   .tarjetas-section img {
-    width: 290px;
     height: 250px;
+    width: 290px;
   }
   .tarjetas-section p {
     width: 290px;
@@ -210,12 +238,12 @@
     width: 315px;
   }
   .tarjetas-section img {
-    width: 315px;
     height: 275px;
+    width: 315px;
   }
   .tarjetas-section p {
-    width: 315px;
     height: 210px;
+    width: 315px;
   }
 }
 /* Colores */
@@ -224,6 +252,7 @@
 /*Fin Bordes */
 /* Parrafos */
 /* Fin Parrafos */
+/* Mixin */
 /* Inicio Main */
 .main-filmografia {
   display: flex;
@@ -422,6 +451,7 @@
 /*Fin Bordes */
 /* Parrafos */
 /* Fin Parrafos */
+/* Mixin */
 /* Inicio Main */
 .main-historia {
   display: flex;
@@ -438,8 +468,8 @@
   padding: 25px;
 }
 .cont-parrafos-historia img {
-  width: 610px;
   height: 500px;
+  width: 610px;
   border-radius: 20px;
 }
 .cont-parrafos-historia:nth-child(3) {
@@ -465,8 +495,8 @@
     flex-direction: column;
   }
   .cont-parrafos-historia img {
-    width: 300px;
     height: 300px;
+    width: 300px;
     border-radius: 300px;
   }
   .cont-parrafos-historia:nth-child(3) {
@@ -480,8 +510,8 @@
     flex-direction: column;
   }
   .cont-parrafos-historia img {
-    width: 370px;
     height: 370px;
+    width: 370px;
     border-radius: 400px;
   }
   .cont-parrafos-historia:nth-child(3) {
@@ -525,8 +555,8 @@
 }
 .premios iframe {
   border-radius: 30px;
-  width: 510px;
   height: 365px;
+  width: 510px;
 }
 .premios:nth-child(2) {
   background-color: #cff4fc;
@@ -564,8 +594,8 @@
     flex-direction: column;
   }
   .section-premios img {
-    width: 290px;
     height: 310px;
+    width: 290px;
     border-radius: 10px;
   }
   .cont-titulo-premios {
@@ -591,8 +621,8 @@
     align-items: center;
   }
   .texto-premios img {
-    width: 300px;
     height: 300px;
+    width: 300px;
     margin-top: 25px;
   }
   .texto-premios p {
@@ -606,8 +636,8 @@
 /* Responsive Design Tablet */
 @media only screen and (max-width: 991px) {
   .section-premios img {
-    width: 350px;
     height: 320px;
+    width: 350px;
     border-radius: 80px;
   }
   .premios {
@@ -736,8 +766,8 @@
     grid-row: 3/4;
   }
   .cont-imagenes img:nth-child(7) {
-    width: 550px;
     height: 450px;
+    width: 550px;
   }
 }
 /* Inicio Main Contacto */
@@ -795,8 +825,8 @@
     align-items: center;
   }
   .div-contacto img {
-    width: 290px;
     height: 290px;
+    width: 290px;
     margin: 20px 0;
   }
   .form-contacto {

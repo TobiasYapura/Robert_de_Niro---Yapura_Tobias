@@ -56,8 +56,7 @@
 
     .div-contacto {
         img {
-            width: 290px;
-            height: 290px;
+            @include tamanios(290px, 290px);
             margin: 20px 0;
         }
     }

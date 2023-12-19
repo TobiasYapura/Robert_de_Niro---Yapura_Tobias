@@ -13,6 +13,7 @@
 
     &:hover {
         background-color: $bg-objetos-hover;
+        transform: scale(1.1);
     }
 }
 
@@ -28,6 +29,7 @@
 
         &:hover {
             background-color: $bg-objetos-hover;
+            transform: scale(1.1);
         }
     }
 }
